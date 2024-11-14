@@ -1,3 +1,4 @@
+
 document.getElementById('dataForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -18,8 +19,12 @@ document.getElementById('dataForm').addEventListener('submit', function (e) {
         body: JSON.stringify(data)
     }).then(response => {
         alert('Data submitted successfully!');
+
+        // Clear all fields after successful submission
+        e.target.reset();
     }).catch(error => {
         console.error('Error:', error);
         alert('An error occurred. Please try again.');
     });
 });
+
