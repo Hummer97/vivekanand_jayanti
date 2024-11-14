@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission</title>
+    <title>Swami Vivekananda Janm Jayanti Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Submit Your Details</h1>
-    <form id="dataForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <header class="header">
+        <h1>Swami Vivekananda Janm Jayanti 2025</h1>
+        <p>Submit your details to honor his teachings and philosophy.</p>
+    </header>
+    <section class="form-section">
+        <form id="dataForm" class="form-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="mobile">Mobile No:</label><br>
-        <input type="text" id="mobile" name="mobile" required><br><br>
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" required>
 
-        <label for="qualification">Qualification:</label><br>
-        <input type="text" id="qualification" name="qualification" required><br><br>
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
 
-        <label for="address">Address:</label><br>
-        <textarea id="address" name="address" required></textarea><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
 
-        <button type="submit">Submit</button>
-    </form>
-
+            <button type="submit">Submit</button>
+        </form>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
