@@ -2,6 +2,11 @@
 document.getElementById('dataForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
+    const spinner = document.getElementById('spinner');
+    const smt_button = document.getElementById('smt_btn');
+    spinner.style.display = 'inline-block'; // Show spinner
+    smt_button.style.display = 'none'; // Show spinner
+
     const formData = new FormData(e.target);
     const data = {
         name: formData.get('name'),
@@ -19,12 +24,15 @@ document.getElementById('dataForm').addEventListener('submit', function (e) {
         body: JSON.stringify(data)
     }).then(response => {
         alert('Data submitted successfully!');
-
+        spinner.style.display = 'none'; // Hide spinner on error
+        smt_button.style.display = 'inline-block'; // Show spinner
         // Clear all fields after successful submission
         e.target.reset();
     }).catch(error => {
         console.error('Error:', error);
         alert('An error occurred. Please try again.');
+        spinner.style.display = 'none'; // Hide spinner on error
+        smt_button.style.display = 'inline-block'; // Show spinner
     });
 });
 

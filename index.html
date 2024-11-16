@@ -8,24 +8,29 @@
 </head>
 <body>
     <header class="header">
-        <h1>Swami Vivekananda Janm Jayanti 2025</h1>
-        <p>Submit your details to honor his teachings and philosophy.</p>
+        <h1>स्वामी विवेकानन्द जन्म जयन्ती 2025</h1>
+        <p>राष्ट्रीय स्वयंसेवक संघ विद्यार्थी विभाग</p>
     </header>
     <section class="form-section">
+        
         <form id="dataForm" class="form-container">
-            <label for="name">Name:</label>
+            <img src="https://chandigarh.rkmm.org/Static%20Images/Swami_Vivekananda_Jaipur.jpg" alt="Swami Vivekananda" class="circular-image">
+            <label for="name">Name(नाम):</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="mobile">Mobile No:</label>
+            <label for="mobile">Mobile No(मोबाइल नं):</label>
             <input type="text" id="mobile" name="mobile" required>
 
-            <label for="qualification">Qualification:</label>
+            <label for="qualification">Qualification(शैक्षणिक योग्यता):</label>
             <input type="text" id="qualification" name="qualification" required>
 
-            <label for="address">Address:</label>
+            <label for="address">Address(पता):</label>
             <textarea id="address" name="address" required></textarea>
 
-            <button type="submit">Submit</button>
+            <div class="button-container">
+                <button id="smt_btn" type="submit">Submit</button>
+                <div class="spinner" id="spinner" style="display: none;"></div>
+            </div>
         </form>
     </section>
     <script src="script.js"></script>
